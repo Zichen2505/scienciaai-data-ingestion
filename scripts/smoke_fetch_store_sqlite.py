@@ -10,11 +10,18 @@ from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 from sqlalchemy import create_engine, text
 from tenacity import retry, stop_after_attempt, wait_exponential
-
+from pathlib import Path
+from dotenv import load_dotenv
 
 load_dotenv()
 
-DB_URL = os.getenv("DB_URL", "sqlite:///./ingestion_smoke.db")
+REPO_ROOT = Path(__file__).resolve().parents[1]
+load_dotenv(REPO_ROOT / ".env", override=True)
+
+DB_URL = os.getenv("DB_URL")
+if not DB_URL:
+    raise RuntimeError(f"DB_URL missing. Expected in {REPO_ROOT / '.env'}")
+
 USER_AGENT = os.getenv("USER_AGENT", "ScienciaAIIngestion/0.1")
 REQUEST_TIMEOUT = int(os.getenv("REQUEST_TIMEOUT", "20"))
 
