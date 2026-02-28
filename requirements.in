@@ -1,0 +1,9 @@
+﻿requests
+beautifulsoup4
+lxml
+pandas
+sqlalchemy
+python-dotenv
+tenacity
+tqdm
+truststore
