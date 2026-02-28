@@ -209,3 +209,17 @@ __marimo__/
 *.db
 *.db-journal
 
+# secrets
+.env
+
+# data must NEVER be in repo
+*.db
+*.sqlite
+*.sqlite3
+*.jsonl
+*.parquet
+*.csv
+
+# local artifacts
+__pycache__/
+*.pyc

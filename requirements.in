@@ -7,3 +7,4 @@ python-dotenv
 tenacity
 tqdm
 truststore
+google-play-scraper==1.2.7

@@ -12,6 +12,8 @@ charset-normalizer==3.4.4
     # via requests
 colorama==0.4.6
     # via tqdm
+google-play-scraper==1.2.7
+    # via -r requirements.in
 greenlet==3.3.2
     # via sqlalchemy
 idna==3.11
