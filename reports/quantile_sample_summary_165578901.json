@@ -1,0 +1,21 @@
+{
+  "run_id": "165578901",
+  "input_file": "data\\checkpoints\\com.openai.chatgpt_recent_window_raw_f942add8.jsonl",
+  "output_sample_file": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\data\\checkpoints\\com.openai.chatgpt_recent_window_raw_f942add8_sampled_quantiles_165578901.jsonl",
+  "total_input_rows": 20000,
+  "total_sampled_rows": 1000,
+  "number_of_buckets": 5,
+  "target_per_bucket": 200,
+  "actual_counts_per_bucket": [
+    200,
+    200,
+    200,
+    200,
+    200
+  ],
+  "duplicate_review_ids": [],
+  "null_content_count": 0,
+  "null_at_count": 0,
+  "min_at": "2026-02-23T03:59:11+00:00",
+  "max_at": "2026-03-16T15:50:42+00:00"
+}

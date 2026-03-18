@@ -1,13 +1,17 @@
 ﻿from __future__ import annotations
 import hashlib
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Any
 
 def _iso(dt: Any) -> str | None:
     if dt is None:
         return None
     if isinstance(dt, datetime):
-        return dt.replace(microsecond=0).isoformat() + "Z"
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        else:
+            dt = dt.astimezone(timezone.utc)
+        return dt.replace(microsecond=0).strftime("%Y-%m-%dT%H:%M:%SZ")
     return str(dt)
 
 def content_hash(app_id: str, r: dict[str, Any]) -> str:
@@ -16,7 +20,7 @@ def content_hash(app_id: str, r: dict[str, Any]) -> str:
         str(r.get("reviewId") or ""),
         str(r.get("userName") or ""),
         str(r.get("score") or ""),
-        str(r.get("at") or ""),
+        str(_iso(r.get("at")) or ""),
         (r.get("content") or "").strip(),
     ])
     return hashlib.sha256(s.encode("utf-8")).hexdigest()
