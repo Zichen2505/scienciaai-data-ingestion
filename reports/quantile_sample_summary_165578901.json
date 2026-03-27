@@ -1,7 +1,7 @@
 {
   "run_id": "165578901",
-  "input_file": "data\\checkpoints\\com.openai.chatgpt_recent_window_raw_f942add8.jsonl",
-  "output_sample_file": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\data\\checkpoints\\com.openai.chatgpt_recent_window_raw_f942add8_sampled_quantiles_165578901.jsonl",
+  "input_file": "data/checkpoints/com.openai.chatgpt_recent_window_raw_f942add8.jsonl",
+  "output_sample_file": "data/checkpoints/com.openai.chatgpt_recent_window_raw_f942add8_sampled_quantiles_165578901.jsonl",
   "total_input_rows": 20000,
   "total_sampled_rows": 1000,
   "number_of_buckets": 5,

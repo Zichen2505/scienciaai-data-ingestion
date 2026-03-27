@@ -7,6 +7,12 @@ from urllib.parse import urlparse
 def _repo_root() -> Path:
     return Path(__file__).resolve().parents[3]
 
+def _resolve_local_path(repo_root: Path, value: str) -> Path:
+    path = Path(value).expanduser()
+    if not path.is_absolute():
+        path = repo_root / path
+    return path.resolve()
+
 def _load_env(repo_root: Path) -> None:
     env_path = repo_root / ".env"
     if not env_path.exists():
@@ -48,17 +54,14 @@ def load_settings() -> Settings:
     repo = _repo_root()
     _load_env(repo)
 
+    data_root = _resolve_local_path(repo, os.getenv("SCIENCIAAI_DATA_DIR", ".local/scienciaai"))
+
     db_url = os.getenv("DB_URL")
-    if not db_url:
-        raise RuntimeError("DB_URL missing in .env or environment.")
-
-    data_root = Path(os.getenv("SCIENCIAAI_DATA_DIR", r"D:\Data\scienciaai"))
-    # Hard constraint: everything goes under D:\Data\scienciaai
-    norm = str(data_root).replace("/", "\\").lower()
-    if norm != r"d:\data\scienciaai":
-        raise RuntimeError(f"SCIENCIAAI_DATA_DIR must be D:\\Data\\scienciaai, got: {data_root}")
-
-    db_path = sqlite_path_from_db_url(db_url)
+    if db_url:
+        db_path = sqlite_path_from_db_url(db_url)
+    else:
+        db_path = data_root / "ingestion.db"
+        db_url = f"sqlite:///{db_path.as_posix()}"
 
     return Settings(
         db_url=db_url,

@@ -1,0 +1,27 @@
+{
+  "computed_from_current_files": {
+    "duplicate_review_id_count": 0,
+    "duplicate_review_id_examples": [],
+    "null_content_count": 0,
+    "empty_content_count": 0,
+    "null_timestamp_count": 0,
+    "malformed_timestamp_count": 0,
+    "null_rating_count": 0,
+    "invalid_rating_count": 0,
+    "null_app_version_count": 1071
+  },
+  "saved_repo_artifacts": {
+    "raw_to_sqlite_run_summary": {
+      "status": "present",
+      "failed_rows": 0,
+      "null_content_count": 0,
+      "null_at_count": 0
+    },
+    "quantile_sample_summary": {
+      "status": "present",
+      "duplicate_review_ids": [],
+      "null_content_count": 0,
+      "null_at_count": 0
+    }
+  }
+}

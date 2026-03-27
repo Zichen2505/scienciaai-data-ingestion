@@ -218,6 +218,17 @@ __marimo__/
 *.sqlite3
 *.jsonl
 *.parquet
+
+# portable local runtime area
+.local/
+
+# local-only run artifacts under reports/
+reports/sample_run_summary.json
+reports/raw_to_sqlite_run_summary_*.json
+!reports/raw_to_sqlite_run_summary_2895d451b8c3.json
+!reports/raw_to_sqlite_run_summary_bfb9129e66f8.json
+reports/quantile_sample_summary_*.json
+!reports/quantile_sample_summary_165578901.json
 *.csv
 
 # local artifacts

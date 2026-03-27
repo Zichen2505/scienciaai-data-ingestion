@@ -1,0 +1,58 @@
+{
+  "computed_from_current_files": {
+    "app_id": "com.openai.chatgpt",
+    "total_rows": 20000,
+    "unique_review_ids": 20000,
+    "observed_min_at": "2026-02-23T03:59:11+00:00",
+    "observed_max_at": "2026-03-16T15:50:42+00:00",
+    "observed_span_days": 21.494109,
+    "recent_window_bounded": {
+      "status": "supported_by_saved_artifact",
+      "value": true,
+      "source_file": "documents/PHASE_I_INGESTION_VALIDATION_SUMMARY.md",
+      "source_text": "the current Google Play access path is recent-window bounded"
+    }
+  },
+  "saved_repo_artifacts": {
+    "raw_to_sqlite_run_summary": {
+      "status": "present",
+      "source_file": "reports/raw_to_sqlite_run_summary_2895d451b8c3.json",
+      "run_id": "2895d451b8c3",
+      "app_id": "com.openai.chatgpt",
+      "input_file": "data/checkpoints/com.openai.chatgpt_recent_window_raw_f942add8.jsonl",
+      "total_input_rows": 20000,
+      "successful_rows": 20000,
+      "new_review_rows": 20000,
+      "existing_review_rows": 0,
+      "failed_rows": 0,
+      "null_content_count": 0,
+      "null_at_count": 0,
+      "min_at": "2026-02-23T03:59:11+00:00",
+      "max_at": "2026-03-16T15:50:42+00:00",
+      "machine_specific_fields_omitted": true
+    },
+    "quantile_sample_summary": {
+      "status": "present",
+      "source_file": "reports/quantile_sample_summary_165578901.json",
+      "run_id": "165578901",
+      "input_file": "data/checkpoints/com.openai.chatgpt_recent_window_raw_f942add8.jsonl",
+      "output_sample_file": "data/checkpoints/com.openai.chatgpt_recent_window_raw_f942add8_sampled_quantiles_165578901.jsonl",
+      "total_input_rows": 20000,
+      "total_sampled_rows": 1000,
+      "number_of_buckets": 5,
+      "target_per_bucket": 200,
+      "actual_counts_per_bucket": [
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "duplicate_review_ids": [],
+      "null_content_count": 0,
+      "null_at_count": 0,
+      "min_at": "2026-02-23T03:59:11+00:00",
+      "max_at": "2026-03-16T15:50:42+00:00"
+    }
+  }
+}

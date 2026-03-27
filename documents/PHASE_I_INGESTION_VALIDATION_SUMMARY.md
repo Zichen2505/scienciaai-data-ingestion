@@ -92,7 +92,7 @@ This is a validation summary, not a production-readiness report and not a scale-
 
 The following are verified:
 
-- repository location: `C:\Users\26716\Dev\AI\scienciaai-data-ingestion`
+- repository location: local development repository root used during the original validation run
 - main ingestion entrypoint: `scripts\google_play_sample_to_sqlite.py`
 - verification utility: `scripts\verify_sqlite.py`
 - local runtime config: `.env`
@@ -101,11 +101,11 @@ The following are verified:
 
 The SQLite database is present and non-empty at:
 
-`D:\Data\scienciaai\ingestion_smoke.db`
+configured local SQLite database path used during the original validation run
 
 A backup copy is also present at:
 
-`D:\Data\scienciaai\ingestion_smoke_before_multiapp_backup.db`
+configured local backup SQLite database path used during the original validation run
 
 ### 2. Current system shape
 

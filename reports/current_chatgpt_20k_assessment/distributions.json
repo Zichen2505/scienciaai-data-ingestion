@@ -1,0 +1,58 @@
+{
+  "computed_from_current_files": {
+    "rating_distribution": {
+      "1": 1167,
+      "2": 315,
+      "3": 746,
+      "4": 1938,
+      "5": 15834
+    },
+    "timestamp_distribution_summary": {
+      "parseable_timestamp_count": 20000,
+      "observed_min_at": "2026-02-23T03:59:11+00:00",
+      "observed_max_at": "2026-03-16T15:50:42+00:00",
+      "observed_day_count": 22,
+      "daily_review_count_min": 2,
+      "daily_review_count_max": 4410,
+      "daily_review_count_median": 4.0,
+      "daily_review_counts": {
+        "2026-02-23": 3449,
+        "2026-02-24": 4410,
+        "2026-02-25": 4197,
+        "2026-02-26": 4259,
+        "2026-02-27": 3616,
+        "2026-02-28": 3,
+        "2026-03-01": 3,
+        "2026-03-02": 6,
+        "2026-03-03": 11,
+        "2026-03-04": 4,
+        "2026-03-05": 3,
+        "2026-03-06": 3,
+        "2026-03-07": 2,
+        "2026-03-08": 7,
+        "2026-03-09": 2,
+        "2026-03-10": 6,
+        "2026-03-11": 2,
+        "2026-03-12": 4,
+        "2026-03-13": 2,
+        "2026-03-14": 2,
+        "2026-03-15": 3,
+        "2026-03-16": 6
+      }
+    },
+    "text_length_distribution_summary": {
+      "count": 20000,
+      "min": 1,
+      "max": 500,
+      "mean": 28.609,
+      "median": 11.0,
+      "p25": 6.0,
+      "p75": 27.0,
+      "short_text_lt_10_count": 9056
+    }
+  },
+  "saved_repo_artifacts": {
+    "phase_i_validation_doc_has_text_length_section": true,
+    "phase_i_validation_doc_has_rating_distribution_section": true
+  }
+}

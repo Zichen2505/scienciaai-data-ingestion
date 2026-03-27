@@ -1,0 +1,14 @@
+{
+  "run_id": "bfb9129e66f8",
+  "app_id": "com.openai.chatgpt",
+  "input_file": "data/checkpoints/com.openai.chatgpt_recent_window_raw_f942add8.jsonl",
+  "total_input_rows": 20000,
+  "successful_rows": 20000,
+  "new_review_rows": 0,
+  "existing_review_rows": 20000,
+  "failed_rows": 0,
+  "null_content_count": 0,
+  "null_at_count": 0,
+  "min_at": "2026-02-23T03:59:11+00:00",
+  "max_at": "2026-03-16T15:50:42+00:00"
+}
