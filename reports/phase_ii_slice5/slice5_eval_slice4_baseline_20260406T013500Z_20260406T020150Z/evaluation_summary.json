@@ -1,0 +1,393 @@
+{
+  "artifacts": {
+    "evaluation_note": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\reports\\phase_ii_slice5\\slice5_eval_slice4_baseline_20260406T013500Z_20260406T020150Z\\evaluation_note.md",
+    "evaluation_summary": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\reports\\phase_ii_slice5\\slice5_eval_slice4_baseline_20260406T013500Z_20260406T020150Z\\evaluation_summary.json",
+    "misclassified_reviews": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\reports\\phase_ii_slice5\\slice5_eval_slice4_baseline_20260406T013500Z_20260406T020150Z\\misclassified_reviews.csv",
+    "test_predictions": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\reports\\phase_ii_slice5\\slice5_eval_slice4_baseline_20260406T013500Z_20260406T020150Z\\test_predictions.csv"
+  },
+  "baseline": {
+    "baseline_dir": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\reports\\phase_ii_slice4\\slice4_baseline_20260406T013500Z",
+    "baseline_run_id": "slice4_baseline_20260406T013500Z",
+    "training_config_path": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\reports\\phase_ii_slice4\\slice4_baseline_20260406T013500Z\\training_config.json",
+    "training_summary_path": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\reports\\phase_ii_slice4\\slice4_baseline_20260406T013500Z\\training_summary.json"
+  },
+  "created_at": "2026-04-06T02:01:50Z",
+  "diagnosis": {
+    "blocking_failure": false,
+    "blocking_reasons": [],
+    "collapse_evidence": {
+      "top_two_predicted_share": 0.6333,
+      "unused_predicted_labels": [
+        "other"
+      ]
+    },
+    "collapse_into_few_classes": false,
+    "minority_label_struggles": [
+      "other"
+    ],
+    "overuses_other": false,
+    "recommendation": "pass_to_slice6",
+    "top_confusion_pairs": [
+      {
+        "count": 6,
+        "gold_label": "capability_answer_quality",
+        "predicted_label": "pricing_access_limits"
+      },
+      {
+        "count": 2,
+        "gold_label": "performance_reliability",
+        "predicted_label": "ui_navigation"
+      },
+      {
+        "count": 1,
+        "gold_label": "account_access",
+        "predicted_label": "capability_answer_quality"
+      },
+      {
+        "count": 1,
+        "gold_label": "other",
+        "predicted_label": "pricing_access_limits"
+      },
+      {
+        "count": 1,
+        "gold_label": "performance_reliability",
+        "predicted_label": "account_access"
+      }
+    ],
+    "weakest_labels": [
+      {
+        "f1": 0.0,
+        "label": "other",
+        "recall": 0.0,
+        "support": 1
+      },
+      {
+        "f1": 0.4615,
+        "label": "capability_answer_quality",
+        "recall": 0.3333,
+        "support": 9
+      },
+      {
+        "f1": 0.5263,
+        "label": "pricing_access_limits",
+        "recall": 1.0,
+        "support": 5
+      }
+    ]
+  },
+  "follow_up_ideas": [
+    "Audit the weakest confusion pairs against the Slice 1 labeling rules to separate label-boundary noise from genuine model blind spots.",
+    "Expand the frozen gold asset in a later slice with more chronologically recent examples for the weakest labels, especially low-support classes.",
+    "Inspect the highest-confidence wrong predictions to identify missing lexical cues or wording patterns that TF-IDF is not separating well.",
+    "Before large batch inference, add a lightweight manual QA pass on predicted `other` cases and the dominant confusion pairs to estimate operational review cost."
+  ],
+  "frozen_contract": {
+    "model": "logistic_regression",
+    "representation": "tfidf",
+    "split_strategy": "chronological",
+    "task": "single-label pain-point classification",
+    "taxonomy": [
+      "performance_reliability",
+      "account_access",
+      "ui_navigation",
+      "pricing_access_limits",
+      "capability_answer_quality",
+      "other"
+    ]
+  },
+  "input_sources": {
+    "gold_labels": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\data\\gold_eval\\phase_ii_gold_eval_set_v1.csv",
+    "modeling_input": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\reports\\phase_ii_slice3\\feature_pipeline_v2_474c66fcfef2_20260406T013120Z_modeling_input.csv"
+  },
+  "metrics": {
+    "confusion_matrix": {
+      "labels": [
+        "performance_reliability",
+        "account_access",
+        "ui_navigation",
+        "pricing_access_limits",
+        "capability_answer_quality",
+        "other"
+      ],
+      "rows": [
+        {
+          "account_access": 1,
+          "capability_answer_quality": 0,
+          "gold_label": "performance_reliability",
+          "other": 0,
+          "performance_reliability": 4,
+          "pricing_access_limits": 1,
+          "ui_navigation": 2
+        },
+        {
+          "account_access": 2,
+          "capability_answer_quality": 1,
+          "gold_label": "account_access",
+          "other": 0,
+          "performance_reliability": 0,
+          "pricing_access_limits": 0,
+          "ui_navigation": 0
+        },
+        {
+          "account_access": 0,
+          "capability_answer_quality": 0,
+          "gold_label": "ui_navigation",
+          "other": 0,
+          "performance_reliability": 0,
+          "pricing_access_limits": 1,
+          "ui_navigation": 3
+        },
+        {
+          "account_access": 0,
+          "capability_answer_quality": 0,
+          "gold_label": "pricing_access_limits",
+          "other": 0,
+          "performance_reliability": 0,
+          "pricing_access_limits": 5,
+          "ui_navigation": 0
+        },
+        {
+          "account_access": 0,
+          "capability_answer_quality": 3,
+          "gold_label": "capability_answer_quality",
+          "other": 0,
+          "performance_reliability": 0,
+          "pricing_access_limits": 6,
+          "ui_navigation": 0
+        },
+        {
+          "account_access": 0,
+          "capability_answer_quality": 0,
+          "gold_label": "other",
+          "other": 0,
+          "performance_reliability": 0,
+          "pricing_access_limits": 1,
+          "ui_navigation": 0
+        }
+      ]
+    },
+    "overall": {
+      "accuracy": 0.5667,
+      "macro_f1": 0.498,
+      "macro_precision": 0.5623,
+      "macro_recall": 0.5417,
+      "weighted_f1": 0.5595,
+      "weighted_precision": 0.6979,
+      "weighted_recall": 0.5667
+    },
+    "per_class": {
+      "account_access": {
+        "f1": 0.6667,
+        "precision": 0.6667,
+        "recall": 0.6667,
+        "support": 3
+      },
+      "capability_answer_quality": {
+        "f1": 0.4615,
+        "precision": 0.75,
+        "recall": 0.3333,
+        "support": 9
+      },
+      "other": {
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "support": 1
+      },
+      "performance_reliability": {
+        "f1": 0.6667,
+        "precision": 1.0,
+        "recall": 0.5,
+        "support": 8
+      },
+      "pricing_access_limits": {
+        "f1": 0.5263,
+        "precision": 0.3571,
+        "recall": 1.0,
+        "support": 5
+      },
+      "ui_navigation": {
+        "f1": 0.6667,
+        "precision": 0.6,
+        "recall": 0.75,
+        "support": 4
+      }
+    },
+    "predicted_label_distribution": {
+      "account_access": 3,
+      "capability_answer_quality": 4,
+      "other": 0,
+      "performance_reliability": 4,
+      "pricing_access_limits": 14,
+      "ui_navigation": 5
+    },
+    "true_label_distribution": {
+      "account_access": 3,
+      "capability_answer_quality": 9,
+      "other": 1,
+      "performance_reliability": 8,
+      "pricing_access_limits": 5,
+      "ui_navigation": 4
+    }
+  },
+  "reconstructed_split_verification": {
+    "joined_labeled_rows": 150,
+    "test_end_review_at": "2026-03-16T10:19:59Z",
+    "test_rows": 30,
+    "test_start_review_at": "2026-02-27T15:06:28Z",
+    "test_start_review_id": "2ba1b78f-7bab-4db7-a9d6-fa544aac36fc",
+    "train_end_review_at": "2026-02-27T13:27:12Z",
+    "train_end_review_id": "4250d322-d23f-41c4-8df8-716c32fbd4ab",
+    "train_rows": 120,
+    "train_start_review_at": "2026-02-23T06:48:45Z"
+  },
+  "representative_errors": [
+    {
+      "gold_label": "capability_answer_quality",
+      "predicted_label": "pricing_access_limits",
+      "predicted_probability": 0.3036,
+      "prepared_text": "very bad photo generating reponse like gemini is more good than this very bad very pooor also sometime its donot provide correct info we have to teell it what is right like than why are we using it 🫡🤐",
+      "rating": 1,
+      "review_at": "2026-03-12T04:37:54Z",
+      "review_id": "f4ef1826-93d0-4254-a648-6331fba90ac6"
+    },
+    {
+      "gold_label": "capability_answer_quality",
+      "predicted_label": "pricing_access_limits",
+      "predicted_probability": 0.2667,
+      "prepared_text": "This app is extremely frustrating. It didn’t respect my uploaded images, and the AI repeatedly changed or ignored what I wanted. Features feel very limited, and it blocks content even when it should be safe. I don’t recommend downloading this app.”",
+      "rating": 1,
+      "review_at": "2026-03-13T22:28:48Z",
+      "review_id": "66d38b93-1878-4428-9bab-a6dafef7d772"
+    },
+    {
+      "gold_label": "capability_answer_quality",
+      "predicted_label": "pricing_access_limits",
+      "predicted_probability": 0.2431,
+      "prepared_text": "It was working really well, especially the coding part — I would rate it 9–10/10. But in the last few days it has become a total mess. The quality dropped massively and now it’s more like 2/10. Very disappointing.",
+      "rating": 1,
+      "review_at": "2026-02-27T19:59:20Z",
+      "review_id": "a491a6a6-36dd-4d1f-b161-e482b74be681"
+    },
+    {
+      "gold_label": "performance_reliability",
+      "predicted_label": "ui_navigation",
+      "predicted_probability": 0.2158,
+      "prepared_text": "it's stuk on the loading screen",
+      "rating": 1,
+      "review_at": "2026-02-27T17:54:14Z",
+      "review_id": "07b594db-fef1-43ed-886c-895f73a00cd6"
+    },
+    {
+      "gold_label": "performance_reliability",
+      "predicted_label": "ui_navigation",
+      "predicted_probability": 0.2116,
+      "prepared_text": "Why does the app delete my chats from a certain point whenever I reopen it? So, the context is that I had written said text during a time when I had no signal, yet when I came home and had stable wifi, I properly sent it—yet when I reopen the chat, it takes me back to the chat I had sent with no signal—deleting all my chats from that point onwards. Fix this, please.",
+      "rating": 3,
+      "review_at": "2026-03-16T10:19:59Z",
+      "review_id": "f98821c0-c12c-4dc1-bd4c-2b3e019b89e5"
+    },
+    {
+      "gold_label": "ui_navigation",
+      "predicted_label": "pricing_access_limits",
+      "predicted_probability": 0.2495,
+      "prepared_text": "I love how every update more of user freedom is taken away. You can't even manually change or see what model you're currently using. Constantly asks me to turn on notifications (why would an AI app need that?) and to this day, you still cannot switch between old and new messages/generations (which USED to be a feature but got removed for no reason), as well as the constant needless change in UI. App user experience is meh.",
+      "rating": 1,
+      "review_at": "2026-02-27T18:05:43Z",
+      "review_id": "3deacdf9-37b8-4479-8b6b-6887870993f6"
+    },
+    {
+      "gold_label": "performance_reliability",
+      "predicted_label": "account_access",
+      "predicted_probability": 0.2493,
+      "prepared_text": "been trying for weeks now..chatgpt is not working in my phone... Just keeps loading and turning",
+      "rating": 1,
+      "review_at": "2026-02-27T17:09:57Z",
+      "review_id": "e18b18aa-a534-4f67-b822-e0b65c651ac6"
+    },
+    {
+      "gold_label": "other",
+      "predicted_label": "pricing_access_limits",
+      "predicted_probability": 0.24,
+      "prepared_text": "I just mistakenly deleted this app on my tablet realised it and want to download it it's telling me it is not compatible with my device any way it's a good app",
+      "rating": 2,
+      "review_at": "2026-02-27T20:31:17Z",
+      "review_id": "3226d505-96da-4a86-b84c-e6bcafbf13cd"
+    },
+    {
+      "gold_label": "account_access",
+      "predicted_label": "capability_answer_quality",
+      "predicted_probability": 0.2242,
+      "prepared_text": "NOW IT WON'T EVEN LET ME DELETE ACCOUNT NOW! Have to update first Old review: It wanted me to be wrong so it said Kash Patel wasn't head of the FBI but Christopher. No more depending on this liar for my truths about health etc.",
+      "rating": 1,
+      "review_at": "2026-03-03T10:41:21Z",
+      "review_id": "05dc76b6-2d9a-44a6-a878-c5b4ac5da25f"
+    },
+    {
+      "gold_label": "performance_reliability",
+      "predicted_label": "pricing_access_limits",
+      "predicted_probability": 0.2036,
+      "prepared_text": "Bugged and it won't let me use the speech to text feature",
+      "rating": 3,
+      "review_at": "2026-02-27T19:12:48Z",
+      "review_id": "f09d81e1-6768-4d74-9110-778836db785a"
+    },
+    {
+      "gold_label": "capability_answer_quality",
+      "predicted_label": "pricing_access_limits",
+      "predicted_probability": 0.2382,
+      "prepared_text": "worst app it can't count 1 to 100 atleast ahhh",
+      "rating": 1,
+      "review_at": "2026-03-05T11:02:39Z",
+      "review_id": "dc7ed282-d998-455f-836f-d161ea3372c1"
+    },
+    {
+      "gold_label": "capability_answer_quality",
+      "predicted_label": "pricing_access_limits",
+      "predicted_probability": 0.219,
+      "prepared_text": "Stupid Ai. Give random information while I ask for spesific. Can't give an accurate data or at least close enough. F Stupid Ai ever",
+      "rating": 1,
+      "review_at": "2026-03-01T03:35:33Z",
+      "review_id": "db9f0748-a7aa-48e5-a2d3-ef39b14f8dd7"
+    }
+  ],
+  "run_id": "slice5_eval_slice4_baseline_20260406T013500Z_20260406T020150Z",
+  "script_path": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\scripts\\phase2\\evaluate_baseline_model.py",
+  "top_confusion_pairs": [
+    {
+      "count": 6,
+      "gold_label": "capability_answer_quality",
+      "predicted_label": "pricing_access_limits"
+    },
+    {
+      "count": 2,
+      "gold_label": "performance_reliability",
+      "predicted_label": "ui_navigation"
+    },
+    {
+      "count": 1,
+      "gold_label": "account_access",
+      "predicted_label": "capability_answer_quality"
+    },
+    {
+      "count": 1,
+      "gold_label": "other",
+      "predicted_label": "pricing_access_limits"
+    },
+    {
+      "count": 1,
+      "gold_label": "performance_reliability",
+      "predicted_label": "account_access"
+    },
+    {
+      "count": 1,
+      "gold_label": "performance_reliability",
+      "predicted_label": "pricing_access_limits"
+    },
+    {
+      "count": 1,
+      "gold_label": "ui_navigation",
+      "predicted_label": "pricing_access_limits"
+    }
+  ]
+}

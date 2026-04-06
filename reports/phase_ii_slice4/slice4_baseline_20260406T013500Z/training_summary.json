@@ -1,0 +1,70 @@
+{
+  "artifacts": {
+    "config": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\reports\\phase_ii_slice4\\slice4_baseline_20260406T013500Z\\training_config.json",
+    "model": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\reports\\phase_ii_slice4\\slice4_baseline_20260406T013500Z\\baseline_logistic_regression.pkl",
+    "summary": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\reports\\phase_ii_slice4\\slice4_baseline_20260406T013500Z\\training_summary.json",
+    "vectorizer": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\reports\\phase_ii_slice4\\slice4_baseline_20260406T013500Z\\baseline_tfidf_vectorizer.pkl"
+  },
+  "class_counts_by_split": {
+    "test": {
+      "account_access": 3,
+      "capability_answer_quality": 9,
+      "other": 1,
+      "performance_reliability": 8,
+      "pricing_access_limits": 5,
+      "ui_navigation": 4
+    },
+    "train": {
+      "account_access": 22,
+      "capability_answer_quality": 21,
+      "other": 7,
+      "performance_reliability": 23,
+      "pricing_access_limits": 26,
+      "ui_navigation": 21
+    }
+  },
+  "completed_at": "2026-04-06T01:32:42Z",
+  "counts": {
+    "joined_labeled_rows": 150,
+    "test_rows": 30,
+    "train_rows": 120
+  },
+  "data_source_paths": {
+    "gold_labels": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\data\\gold_eval\\phase_ii_gold_eval_set_v1.csv",
+    "modeling_input": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\reports\\phase_ii_slice3\\feature_pipeline_v2_474c66fcfef2_20260406T013120Z_modeling_input.csv"
+  },
+  "label_set_used": [
+    "performance_reliability",
+    "account_access",
+    "ui_navigation",
+    "pricing_access_limits",
+    "capability_answer_quality",
+    "other"
+  ],
+  "model_statement": "Only TF-IDF features and one Logistic Regression classifier were used.",
+  "run_id": "slice4_baseline_20260406T013500Z",
+  "script_path": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\scripts\\train_baseline_model.py",
+  "split_logic": {
+    "description": "Join frozen gold labels to Slice 3 modeling input on review_id, sort by review_at ascending and review_id ascending, use the oldest rows for train, and reserve the chronologically newest rows for test.",
+    "strategy": "chronological",
+    "test_end_review_at": "2026-03-16T10:19:59Z",
+    "test_rows": 30,
+    "test_start_review_at": "2026-02-27T15:06:28Z",
+    "test_start_review_id": "2ba1b78f-7bab-4db7-a9d6-fa544aac36fc",
+    "train_end_review_at": "2026-02-27T13:27:12Z",
+    "train_end_review_id": "4250d322-d23f-41c4-8df8-716c32fbd4ab",
+    "train_rows": 120,
+    "train_start_review_at": "2026-02-23T06:48:45Z"
+  },
+  "vectorizer": {
+    "test_matrix_shape": [
+      30,
+      4807
+    ],
+    "train_matrix_shape": [
+      120,
+      4807
+    ],
+    "vocabulary_size": 4807
+  }
+}

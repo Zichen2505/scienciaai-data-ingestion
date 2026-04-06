@@ -1,0 +1,49 @@
+{
+  "artifacts": {
+    "model": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\reports\\phase_ii_slice4\\slice4_baseline_20260406T013500Z\\baseline_logistic_regression.pkl",
+    "summary": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\reports\\phase_ii_slice4\\slice4_baseline_20260406T013500Z\\training_summary.json",
+    "vectorizer": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\reports\\phase_ii_slice4\\slice4_baseline_20260406T013500Z\\baseline_tfidf_vectorizer.pkl"
+  },
+  "created_at": "2026-04-06T01:32:42Z",
+  "frozen_taxonomy": [
+    "performance_reliability",
+    "account_access",
+    "ui_navigation",
+    "pricing_access_limits",
+    "capability_answer_quality",
+    "other"
+  ],
+  "input_paths": {
+    "gold_labels": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\data\\gold_eval\\phase_ii_gold_eval_set_v1.csv",
+    "modeling_input": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\reports\\phase_ii_slice3\\feature_pipeline_v2_474c66fcfef2_20260406T013120Z_modeling_input.csv"
+  },
+  "logistic_regression": {
+    "max_iter": 1000,
+    "solver": "lbfgs"
+  },
+  "model": "logistic_regression",
+  "representation": "tfidf",
+  "run_id": "slice4_baseline_20260406T013500Z",
+  "split": {
+    "sort_order": [
+      "review_at asc",
+      "review_id asc"
+    ],
+    "strategy": "chronological",
+    "test_fraction": 0.2,
+    "test_rows": 30,
+    "train_end_index_exclusive": 120,
+    "train_rows": 120
+  },
+  "task": "single-label pain-point classification",
+  "tfidf": {
+    "lowercase": true,
+    "min_df": 1,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "norm": "l2",
+    "strip_accents": "unicode"
+  }
+}

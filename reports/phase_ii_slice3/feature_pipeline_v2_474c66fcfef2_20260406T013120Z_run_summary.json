@@ -1,0 +1,49 @@
+{
+  "created_at": "2026-04-06T01:31:20Z",
+  "feature_run_id": "474c66fcfef2",
+  "db_path": "D:\\Data\\scienciaai\\ingestion_smoke.db",
+  "input_scope": {
+    "app_id": "com.openai.chatgpt",
+    "limit": 20200,
+    "selection_order": "coalesce(at, '') desc, review_id asc"
+  },
+  "output_artifacts": {
+    "modeling_input_csv": "reports\\phase_ii_slice3\\feature_pipeline_v2_474c66fcfef2_20260406T013120Z_modeling_input.csv",
+    "run_summary_json": "reports\\phase_ii_slice3\\feature_pipeline_v2_474c66fcfef2_20260406T013120Z_run_summary.json"
+  },
+  "row_counts": {
+    "selected_reviews": 20000,
+    "inserted_review_features": 20000,
+    "review_features_rows_for_run": 20000
+  },
+  "exclusions_or_skips": {
+    "skipped_rows": 0,
+    "notes": "No row-level skips; empty/short text represented through quality flags."
+  },
+  "edge_case_counts": {
+    "null_text": 0,
+    "empty_after_prep": 0,
+    "short_text": 10660,
+    "very_long_text": 0
+  },
+  "hashes": {
+    "modeling_input_stable_sha256": "aac42a75b6b2af1dee88a620972c15e451f2a1f01cac6dfd7977b5a4468a0c76",
+    "export_row_payload_sha256": "4a1349dbd97b2639d49d7e7d92b64f934bd9db94edb140e2a44bfbca43846295"
+  },
+  "reviews_read_only_snapshot": {
+    "before": {
+      "review_count": 20200,
+      "null_content_count": 0,
+      "max_last_seen_at": "2026-03-20T01:07:07Z",
+      "min_first_seen_at": "2026-02-28T06:16:26Z"
+    },
+    "after": {
+      "review_count": 20200,
+      "null_content_count": 0,
+      "max_last_seen_at": "2026-03-20T01:07:07Z",
+      "min_first_seen_at": "2026-02-28T06:16:26Z"
+    },
+    "unchanged": true
+  },
+  "status": "completed"
+}

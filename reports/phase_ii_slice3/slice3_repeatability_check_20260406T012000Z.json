@@ -1,0 +1,31 @@
+{
+  "created_at": "2026-04-06T01:20:00Z",
+  "scope": {
+    "app_id": "com.openai.chatgpt",
+    "limit": 120,
+    "selection_order": "coalesce(at, '') desc, review_id asc"
+  },
+  "runs_compared": [
+    {
+      "feature_run_id": "730978fe4d01",
+      "summary_path": "reports/phase_ii_slice3/feature_pipeline_v2_730978fe4d01_20260406T011920Z_run_summary.json",
+      "modeling_input_stable_sha256": "4c341fef12c2ad3eaa768dc8aa136fbda9527ffbcbc04b60f0a774c351a4e974",
+      "selected_reviews": 120,
+      "inserted_review_features": 120
+    },
+    {
+      "feature_run_id": "f74cac5ec367",
+      "summary_path": "reports/phase_ii_slice3/feature_pipeline_v2_f74cac5ec367_20260406T011924Z_run_summary.json",
+      "modeling_input_stable_sha256": "4c341fef12c2ad3eaa768dc8aa136fbda9527ffbcbc04b60f0a774c351a4e974",
+      "selected_reviews": 120,
+      "inserted_review_features": 120
+    }
+  ],
+  "repeatability_checks": {
+    "stable_hash_match": true,
+    "selected_review_count_match": true,
+    "inserted_review_features_match": true,
+    "reviews_snapshot_unchanged_in_each_run": true
+  },
+  "notes": "The stable hash excludes feature_run_id so deterministic preparation can be compared across runs."
+}

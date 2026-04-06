@@ -1,0 +1,57 @@
+{
+  "artifacts": {
+    "inference_note_md": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\artifacts\\phase2\\slice6\\slice6_inference_slice4_baseline_20260406T013500Z_20260406T020924Z\\inference_note.md",
+    "inference_summary_json": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\artifacts\\phase2\\slice6\\slice6_inference_slice4_baseline_20260406T013500Z_20260406T020924Z\\inference_summary.json",
+    "predictions_csv": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\artifacts\\phase2\\slice6\\slice6_inference_slice4_baseline_20260406T013500Z_20260406T020924Z\\predictions.csv",
+    "sqlite_table_predictions": "phase2_review_predictions",
+    "sqlite_table_runs": "phase2_inference_runs"
+  },
+  "baseline": {
+    "baseline_dir": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\reports\\phase_ii_slice4\\slice4_baseline_20260406T013500Z",
+    "baseline_run_id": "slice4_baseline_20260406T013500Z",
+    "model_artifact_path": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\reports\\phase_ii_slice4\\slice4_baseline_20260406T013500Z\\baseline_logistic_regression.pkl",
+    "vectorizer_artifact_path": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\reports\\phase_ii_slice4\\slice4_baseline_20260406T013500Z\\baseline_tfidf_vectorizer.pkl"
+  },
+  "counts": {
+    "predictions_written": 5000,
+    "selected_reviews": 5000,
+    "sqlite_rows_inserted": 5000
+  },
+  "created_at": "2026-04-06T02:09:24Z",
+  "db_path": "D:\\Data\\scienciaai\\ingestion_smoke.db",
+  "frozen_contract": {
+    "model": "logistic_regression",
+    "representation": "tfidf",
+    "task": "single-label pain-point classification",
+    "taxonomy": [
+      "performance_reliability",
+      "account_access",
+      "ui_navigation",
+      "pricing_access_limits",
+      "capability_answer_quality",
+      "other"
+    ]
+  },
+  "inference_run_id": "slice6_inference_slice4_baseline_20260406T013500Z_20260406T020924Z",
+  "operational": {
+    "deterministic_scope_validated": true,
+    "skipped_rows": 0,
+    "validation_failures": 0
+  },
+  "predicted_label_distribution": {
+    "account_access": 52,
+    "capability_answer_quality": 77,
+    "other": 0,
+    "performance_reliability": 450,
+    "pricing_access_limits": 4177,
+    "ui_navigation": 244
+  },
+  "scope": {
+    "app_id": "com.openai.chatgpt",
+    "exclude_gold_review_ids_count": 150,
+    "exclude_gold_review_ids_from": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\data\\gold_eval\\phase_ii_gold_eval_set_v1.csv",
+    "limit": 5000,
+    "selection_order": "COALESCE(at, '') DESC, review_id ASC"
+  },
+  "script_path": "C:\\Users\\26716\\Dev\\AI\\scienciaai-data-ingestion\\scripts\\phase2\\run_batch_inference.py"
+}

@@ -1,5 +1,7 @@
 # Primary App Selection
 
+Historical note: this file records the original Phase I source-selection decision. The selection itself remains valid historical context, but the project has since progressed through an accepted Phase II closed loop.
+
 ## Selected App
 
 - App Name: ChatGPT
@@ -39,7 +41,6 @@ Unless significant technical issues arise during ingestion (e.g., blocking anti-
 
 ## Next Steps
 
-1. Define schema and deduplication rules for reviews.
-2. Implement ingestion workflow for this app.
-3. Run a pilot collection (~1k reviews) to validate the pipeline.
-4. Expand to the full milestone collection (≥10k reviews).
+The step list originally tied to this Phase I selection is now historically superseded.
+
+Current bounded next step, if work continues beyond accepted Phase II: keep any follow-on analysis limited to a tightly controlled reviewer-insight layer over high-confidence `other` and low-confidence predictions, without changing the accepted closed-loop workflow or expanding the formal label set.

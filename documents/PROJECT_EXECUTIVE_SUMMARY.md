@@ -1,5 +1,7 @@
 # Project Executive Summary
 
+Historical note: this file preserves the original Phase I executive framing. For the current accepted repo state after Phase II closure, use `documents/CURRENT_STATUS.md`, `documents/PHASE_II_STATUS.md`, and `documents/Phase_II_Reviewer_Summary.md`.
+
 ## 1. What this project is
 
 This repository contains a Phase I data ingestion MVP for Google Play reviews.
@@ -128,22 +130,15 @@ This distinction matters because some forward-looking design thinking exists in 
 
 ## 6. Next steps
 
-The next steps should remain simple and disciplined.
+The original Phase I next-step plan below is now historically superseded by the accepted Phase II closed loop.
 
 ### Immediate next step
 
-Use the current repo summary and current dataset assessment to close the Phase I review with a clear, evidence-based conclusion.
+Current bounded next step, if any work continues beyond accepted Phase II: add a tightly controlled reviewer-insight layer restricted to high-confidence `other` and low-confidence predictions, without changing the verified Phase II workflow, frozen taxonomy, or closed-loop conclusion.
 
 ### After that
 
-If the current validation framework is accepted, expand coverage in a controlled way rather than jumping directly into large-scale ingestion.
-
-That would likely mean:
-
-- repeated sampling on the same apps
-- broader but still controlled app coverage
-- re-running the same inspection workflow
-- only then deciding whether larger architectural expansion is justified
+Anything broader than that, including clustering, automatic taxonomy expansion, dashboards, APIs, or production-style ML operation, should be treated as a later phase rather than as unfinished Phase II.
 
 ---
 
@@ -162,7 +157,7 @@ What is happening now:
 - the current dataset is being examined before scaling further
 
 What comes next:
-- confirm whether the current source and validation workflow justify broader expansion
+- keep any post-Phase-II work limited to reviewer insight over residual uncertainty slices rather than broad scope expansion
 
 So the project is best understood as:
 

@@ -1,5 +1,7 @@
 ﻿# Phase I Google Play Ingestion Validation Summary
 
+Historical note: this file preserves a Phase I validation snapshot plus an early additive feature-layer checkpoint. For the current accepted repo state after Phase II closure, use `documents/CURRENT_STATUS.md`, `documents/PHASE_II_STATUS.md`, and `documents/Phase_II_Reviewer_Summary.md`.
+
 ## Latest validated status 3/18/2026
 
 The current Phase I ingestion workflow has now validated the following for the primary app `com.openai.chatgpt`:
@@ -370,4 +372,75 @@ What is not proven yet:
 So the correct conclusion is still:
 
 **Google Play looks viable as an early-stage ingestion source, but more validation is needed before committing further architectural effort at scale.**
+
+---
+
+## Feature Layer Setup And Validation Update 4/5/2026
+
+### Objective
+
+Package the initial feature-engineering setup work as an additive extension on top of the current ingestion foundation, without changing canonical ingestion/storage behavior.
+
+### Completed work
+
+- canonicality alignment completed:
+	- `reviews` remains the canonical review entity
+	- `review_id` remains the canonical review key
+	- `content` remains the canonical stored review text field
+	- local SQLite path ambiguity was resolved to the repo settings convention
+	- the feature phase boundary was clarified as an additive next phase, not a replacement of ingestion
+- feature schema design completed:
+	- additive feature storage schema created in `schema/feature_schema_extension_v1.sql`
+	- no replacement or rewrite of `schema/reviews_schema.sql`
+- feature contract completed:
+	- field-generation rules documented in `documents/feature_contract.md`
+- minimal first-pass pipeline completed:
+	- `scripts/run_feature_pipeline_v1.py`
+	- safe bounded default scope
+	- NULL / empty text handling aligned with contract
+
+### Validation and evidence
+
+- additive feature schema was applied successfully to the real local SQLite database used by current repo settings
+- verified new objects:
+	- `feature_runs`
+	- `review_features`
+	- `review_aspects`
+	- `review_feature_summary_v1`
+- one controlled real run was executed successfully:
+	- app_id = `com.openai.chatgpt`
+	- limit = `20`
+	- created feature_run_id = `221f7b8447c9`
+	- `feature_runs.status` = `completed`
+	- inserted `20` rows into `review_features`
+- observed result stayed structurally aligned with the contract:
+	- non-negative count fields
+	- `aspect_count = 0` in first pass
+	- no `review_aspects` population in first pass
+	- no canonical ingestion row changes
+	- no schema damage observed
+
+### Current status at that time
+
+The repo now has:
+
+- canonical ingestion schema still intact
+- additive feature storage schema in place
+- feature-generation contract in place
+- a minimal runnable feature pipeline in place
+- one successful real-DB validation run at small scope
+
+This means the feature layer is now initialized as a controlled extension on top of the ingestion foundation, but it is still intentionally minimal.
+
+### Next step at that time
+
+Controlled sentiment-baseline enablement using a lightweight, explainable method that fits current repo constraints.
+
+### Risks and open items
+
+- sentiment remained unresolved in the first real run and was recorded as NULL because no lightweight sentiment package is currently declared in repo dependencies
+- keyword extraction is not implemented yet
+- aspect extraction is not implemented yet
+- `review_aspects` is not populated in the first pass
+- no clustering or broader semantic grouping is implemented yet
 
