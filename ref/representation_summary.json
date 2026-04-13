@@ -1,0 +1,53 @@
+{
+  "artifacts": {
+    "issue_relevance_gate_main_output_csv": "artifacts/phase5/issue_relevance_gate_v2/issue_relevance_routing.csv",
+    "issue_relevance_gate_summary_json": "artifacts/phase5/issue_relevance_gate_v2/relevance_gate_summary.json",
+    "representation_note": "documents/PHASE_V_MODULE1_REPRESENTATION_NOTE_GATED_V1.md",
+    "representation_sample_csv": "artifacts/phase5/module1_representation_gated_v1/representation_sample.csv",
+    "representation_summary_json": "artifacts/phase5/module1_representation_gated_v1/representation_summary.json",
+    "run_summary_json": "artifacts/phase5/module1_representation_gated_v1/run_summary.json"
+  },
+  "config_ref": "configs/phase5/module1_representation_config_gated_v1.json",
+  "contract_ref": "documents/contracts/phases/phase5_contract.md",
+  "coverage": {
+    "cluster_input_text_non_null_rate": 1.0,
+    "primary_label_non_null_rate": 1.0,
+    "rating_or_null_reason_coverage": 1.0,
+    "time_or_null_reason_coverage": 1.0,
+    "version_or_null_reason_coverage": 1.0
+  },
+  "executed_at": "2026-04-12T23:22:51Z",
+  "input_package_ref": "configs/phase5/module1_input_package_gated_v1.json",
+  "input_surface": {
+    "consume_statuses": [
+      "issue_bearing"
+    ],
+    "eligible_row_count_from_gate": 209,
+    "source_type": "phase5_issue_relevance_gate_routing"
+  },
+  "lineage": {
+    "baseline_feature_version": "feature_pipeline_v2_474c66fcfef2_20260406T013120Z_modeling_input",
+    "baseline_model_version": "slice4_baseline_20260406T013500Z",
+    "feedback_export_version": "module2_slice23_validation_run_phase4_unblock_20260410T041500Z",
+    "issue_relevance_gate_run_id": "phase5_issue_relevance_gate_v2",
+    "issue_relevance_rule_version": "phase5_issue_relevance_gate_rules_v2",
+    "representation_version": "phase5_representation_gated_v1",
+    "taxonomy_version": "phase2_frozen_taxonomy_v1"
+  },
+  "module": "module1",
+  "phase": "phase5",
+  "phase_state_assertion": "open_for_governed_delivery",
+  "primary_verdict": "accept",
+  "run_id": "phase5_module1_representation_gated_v1",
+  "source_scope": {
+    "issue_relevance_gate_eligible_statuses": [
+      "issue_bearing"
+    ],
+    "max_candidate_rows": 5000,
+    "selected_rows": 209,
+    "source_app_id": "com.openai.chatgpt",
+    "source_inference_run_id": "slice6_inference_slice4_baseline_20260406T013500Z_20260406T020924Z",
+    "source_queue_run_id": "module1_validation_run_c",
+    "source_subset_rule": "consume_issue_bearing_only_from_explicit_gate_output"
+  }
+}
