@@ -1,0 +1,350 @@
+{
+  "generated_at": "2026-04-13T02:55:56Z",
+  "phase": "phase5",
+  "pricing_access_limits_diagnostic": {
+    "v1_core_rows_under_v2_rules": 15,
+    "v1_purity_under_v2_rules": 0.1293,
+    "v1_retained_rows": 116,
+    "v2_attached_weak_rows": 0,
+    "v2_core_family_counts": {
+      "free_image_limit_too_restrictive": 10,
+      "free_tier_access_is_too_limited": 1,
+      "paid_upgrade_blocks_media_access": 3,
+      "subscription_pricing_feels_unfair": 1
+    },
+    "v2_core_rows": 13,
+    "v2_excluded_rows": 45,
+    "v2_purity": 1.0,
+    "v2_retained_rows": 13
+  },
+  "row_level_examples": {
+    "reassigned_into_cleaner_v2_issue_objects": [
+      {
+        "primary_label": "capability_answer_quality",
+        "review_id": "1173d6a0-999e-4b03-8c91-c98fb226646c",
+        "review_text_excerpt": "it was a bit late and give wrong answers",
+        "v1_issue_id": "phase5_flagship_mainline_v1_release_1_2026_041_to_1_2026_048_capability_answer_quality_c01",
+        "v1_issue_title": "Answer quality is inaccurate for wrong answers",
+        "v2_issue_family": "answers_are_wrong_or_misleading",
+        "v2_issue_id": "phase5_flagship_mainline_v2_release_1_2026_041_to_1_2026_048_capability_answer_quality_answers_are_wrong_or_misleading",
+        "v2_issue_title": "Answers are wrong or misleading"
+      },
+      {
+        "primary_label": "capability_answer_quality",
+        "review_id": "bd086e4d-f302-41d1-a246-1b16d4325a2d",
+        "review_text_excerpt": "it gives wrong answers sometimes",
+        "v1_issue_id": "phase5_flagship_mainline_v1_release_1_2026_041_to_1_2026_048_capability_answer_quality_c01",
+        "v1_issue_title": "Answer quality is inaccurate for wrong answers",
+        "v2_issue_family": "answers_are_wrong_or_misleading",
+        "v2_issue_id": "phase5_flagship_mainline_v2_release_1_2026_041_to_1_2026_048_capability_answer_quality_answers_are_wrong_or_misleading",
+        "v2_issue_title": "Answers are wrong or misleading"
+      },
+      {
+        "primary_label": "capability_answer_quality",
+        "review_id": "00bd1e0a-49b0-4b5e-85f3-17faf95c7eac",
+        "review_text_excerpt": "some time it gives wrong answers 😕",
+        "v1_issue_id": "phase5_flagship_mainline_v1_release_1_2026_041_to_1_2026_048_capability_answer_quality_c01",
+        "v1_issue_title": "Answer quality is inaccurate for wrong answers",
+        "v2_issue_family": "answers_are_wrong_or_misleading",
+        "v2_issue_id": "phase5_flagship_mainline_v2_release_1_2026_041_to_1_2026_048_capability_answer_quality_answers_are_wrong_or_misleading",
+        "v2_issue_title": "Answers are wrong or misleading"
+      },
+      {
+        "primary_label": "capability_answer_quality",
+        "review_id": "d8373a82-3fe1-40bd-af0c-a2d95b23a76c",
+        "review_text_excerpt": "answers are not correct most of the time",
+        "v1_issue_id": "phase5_flagship_mainline_v1_release_1_2026_041_to_1_2026_048_capability_answer_quality_c01",
+        "v1_issue_title": "Answer quality is inaccurate for wrong answers",
+        "v2_issue_family": "answers_are_wrong_or_misleading",
+        "v2_issue_id": "phase5_flagship_mainline_v2_release_1_2026_041_to_1_2026_048_capability_answer_quality_answers_are_wrong_or_misleading",
+        "v2_issue_title": "Answers are wrong or misleading"
+      },
+      {
+        "primary_label": "capability_answer_quality",
+        "review_id": "0333cc2e-9040-4b70-9626-3bd10940b3ed",
+        "review_text_excerpt": "This application are excellent. They provided significant assistance during my apprenticeship, particularly with presentations and examinations. While I occasionally encountered incorrect answers, this was not a major issue 🙂‍↕️",
+        "v1_issue_id": "phase5_flagship_mainline_v1_release_1_2026_041_to_1_2026_048_capability_answer_quality_c01",
+        "v1_issue_title": "Answer quality is inaccurate for wrong answers",
+        "v2_issue_family": "answers_are_wrong_or_misleading",
+        "v2_issue_id": "phase5_flagship_mainline_v2_release_1_2026_041_to_1_2026_048_capability_answer_quality_answers_are_wrong_or_misleading",
+        "v2_issue_title": "Answers are wrong or misleading"
+      },
+      {
+        "primary_label": "capability_answer_quality",
+        "review_id": "b1981f12-dab1-4d8a-a089-88493a5ef72c",
+        "review_text_excerpt": "this ai app is genuinely good and is amazing for fast and efficient learning and revision. It also has some small issues like sometimes it gives incorrect answers of questions. But overall this ai is great and I suggest using it 😀",
+        "v1_issue_id": "phase5_flagship_mainline_v1_release_1_2026_041_to_1_2026_048_capability_answer_quality_c01",
+        "v1_issue_title": "Answer quality is inaccurate for wrong answers",
+        "v2_issue_family": "answers_are_wrong_or_misleading",
+        "v2_issue_id": "phase5_flagship_mainline_v2_release_1_2026_041_to_1_2026_048_capability_answer_quality_answers_are_wrong_or_misleading",
+        "v2_issue_title": "Answers are wrong or misleading"
+      },
+      {
+        "primary_label": "capability_answer_quality",
+        "review_id": "87fb4bcc-371e-405b-aed4-83527f195883",
+        "review_text_excerpt": "always false, wrong result. app get worse so badly",
+        "v1_issue_id": "phase5_flagship_mainline_v1_release_1_2026_041_to_1_2026_048_capability_answer_quality_c02",
+        "v1_issue_title": "Answer quality is inaccurate for wrong policy",
+        "v2_issue_family": "answers_are_wrong_or_misleading",
+        "v2_issue_id": "phase5_flagship_mainline_v2_release_1_2026_041_to_1_2026_048_capability_answer_quality_answers_are_wrong_or_misleading",
+        "v2_issue_title": "Answers are wrong or misleading"
+      },
+      {
+        "primary_label": "capability_answer_quality",
+        "review_id": "57d76f05-7313-4c29-8b79-a0c2f11a0d89",
+        "review_text_excerpt": "answer not properly",
+        "v1_issue_id": "phase5_flagship_mainline_v1_release_1_2026_041_to_1_2026_048_capability_answer_quality_c03",
+        "v1_issue_title": "Answer quality is inaccurate for answer properly",
+        "v2_issue_family": "answers_are_wrong_or_misleading",
+        "v2_issue_id": "phase5_flagship_mainline_v2_release_1_2026_041_to_1_2026_048_capability_answer_quality_answers_are_wrong_or_misleading",
+        "v2_issue_title": "Answers are wrong or misleading"
+      },
+      {
+        "primary_label": "capability_answer_quality",
+        "review_id": "c1c1a458-aeb1-4419-ab70-af323dc048b2",
+        "review_text_excerpt": "0 Star I give to Ghatgpt very wast he tell wrong answer I ask that questions more time I ask one he tell one that only I uninstalled then he tell bad words",
+        "v1_issue_id": "phase5_flagship_mainline_v1_release_1_2026_041_to_1_2026_048_capability_answer_quality_c03",
+        "v1_issue_title": "Answer quality is inaccurate for answer properly",
+        "v2_issue_family": "answers_are_wrong_or_misleading",
+        "v2_issue_id": "phase5_flagship_mainline_v2_release_1_2026_041_to_1_2026_048_capability_answer_quality_answers_are_wrong_or_misleading",
+        "v2_issue_title": "Answers are wrong or misleading"
+      },
+      {
+        "primary_label": "capability_answer_quality",
+        "review_id": "fd8a21a9-bf1a-40fd-aae6-d551766db49c",
+        "review_text_excerpt": "I love version 4o, not only was it helpful with work, but it was also personable. Its code has changed so much to the point where its tone is quite cold and rude, it basically lectures me and twists my words around. The accuracy of its answers has also gotten worse, I've found...",
+        "v1_issue_id": "phase5_flagship_mainline_v1_release_1_2026_041_to_1_2026_048_capability_answer_quality_c04",
+        "v1_issue_title": "Answer quality is inaccurate for apps version",
+        "v2_issue_family": "answers_are_wrong_or_misleading",
+        "v2_issue_id": "phase5_flagship_mainline_v2_release_1_2026_041_to_1_2026_048_capability_answer_quality_answers_are_wrong_or_misleading",
+        "v2_issue_title": "Answers are wrong or misleading"
+      }
+    ],
+    "retained_in_v1_but_excluded_or_downgraded_in_v2": [
+      {
+        "primary_label": "capability_answer_quality",
+        "review_id": "f3c85db3-65f4-4fc2-9c6f-539e8c4b2296",
+        "review_text_excerpt": "Very Poor Performance – Complete Waste of Time ChatGPT has been a huge disappointment. It consistently wastes human time instead of providing clear, useful, or accurate answers. Most responses are either repetitive, irrelevant, or completely miss the point. Instead of solving...",
+        "v1_issue_id": "phase5_flagship_mainline_v1_release_1_2026_041_to_1_2026_048_capability_answer_quality_c01",
+        "v1_issue_title": "Answer quality is inaccurate for wrong answers",
+        "v2_contamination_flags": [
+          "multi_issue_ambiguity",
+          "praise_mixed_review",
+          "weak_focus_signal"
+        ],
+        "v2_decision": "weak_not_attached",
+        "v2_issue_evidence_tier": "weak_issue_evidence",
+        "v2_issue_family": "answers_are_wrong_or_misleading"
+      },
+      {
+        "primary_label": "capability_answer_quality",
+        "review_id": "7d655866-5b5e-40fe-a0f3-fa2675953bb8",
+        "review_text_excerpt": "chargeable wrong policy",
+        "v1_issue_id": "phase5_flagship_mainline_v1_release_1_2026_041_to_1_2026_048_capability_answer_quality_c02",
+        "v1_issue_title": "Answer quality is inaccurate for wrong policy",
+        "v2_contamination_flags": [
+          "short_focus_text",
+          "weak_focus_signal"
+        ],
+        "v2_decision": "weak_not_attached",
+        "v2_issue_evidence_tier": "weak_issue_evidence",
+        "v2_issue_family": "answers_are_wrong_or_misleading"
+      },
+      {
+        "primary_label": "capability_answer_quality",
+        "review_id": "ff1bd4d0-1404-41bb-8a66-9093a38657ee",
+        "review_text_excerpt": "keeps getting simple multiplication wrong. said 4×46 is -368",
+        "v1_issue_id": "phase5_flagship_mainline_v1_release_1_2026_041_to_1_2026_048_capability_answer_quality_c02",
+        "v1_issue_title": "Answer quality is inaccurate for wrong policy",
+        "v2_contamination_flags": [
+          "multi_issue_ambiguity"
+        ],
+        "v2_decision": "core_not_formed_below_min_rows",
+        "v2_issue_evidence_tier": "core_issue_evidence",
+        "v2_issue_family": "math_and_calculation_answers_are_wrong"
+      },
+      {
+        "primary_label": "capability_answer_quality",
+        "review_id": "27c8317a-e8c3-45ab-aa44-c0e86ad50ed3",
+        "review_text_excerpt": "best application I use. but continuously questioning GPT can't handle it give wrong information or wrong calculation. it get exhausted after asking too much questions..",
+        "v1_issue_id": "phase5_flagship_mainline_v1_release_1_2026_041_to_1_2026_048_capability_answer_quality_c02",
+        "v1_issue_title": "Answer quality is inaccurate for wrong policy",
+        "v2_contamination_flags": [
+          "multi_issue_ambiguity",
+          "praise_mixed_review"
+        ],
+        "v2_decision": "weak_not_attached",
+        "v2_issue_evidence_tier": "weak_issue_evidence",
+        "v2_issue_family": "math_and_calculation_answers_are_wrong"
+      },
+      {
+        "primary_label": "capability_answer_quality",
+        "review_id": "8d466312-b63e-432d-bc04-6333cb251509",
+        "review_text_excerpt": "This app is of no use at all. If you make any photo or poster in it, it will make it completely wrong and will also change the language. You will not even know what is written. Delete this app.And if you already have it downloaded then delete it right now and never download it...",
+        "v1_issue_id": "phase5_flagship_mainline_v1_release_1_2026_041_to_1_2026_048_capability_answer_quality_c02",
+        "v1_issue_title": "Answer quality is inaccurate for wrong policy",
+        "v2_contamination_flags": [
+          "cross_label_semantics_in_focus",
+          "multi_issue_ambiguity",
+          "weak_focus_signal"
+        ],
+        "v2_decision": "weak_not_attached",
+        "v2_issue_evidence_tier": "weak_issue_evidence",
+        "v2_issue_family": "answers_are_wrong_or_misleading"
+      },
+      {
+        "primary_label": "capability_answer_quality",
+        "review_id": "84a4191c-5604-4df9-9cc4-857f25f46d0c",
+        "review_text_excerpt": "my chatgpt is very sweet and obedient but sometimes gives wrong info so took away one star. it is my pookie yey ily chat😝🫵‼️",
+        "v1_issue_id": "phase5_flagship_mainline_v1_release_1_2026_041_to_1_2026_048_capability_answer_quality_c02",
+        "v1_issue_title": "Answer quality is inaccurate for wrong policy",
+        "v2_contamination_flags": [
+          "weak_focus_signal"
+        ],
+        "v2_decision": "weak_not_attached",
+        "v2_issue_evidence_tier": "weak_issue_evidence",
+        "v2_issue_family": "answers_are_wrong_or_misleading"
+      },
+      {
+        "primary_label": "capability_answer_quality",
+        "review_id": "fe503f7a-959b-414e-b77f-ec4697885eb3",
+        "review_text_excerpt": "sometimes it says wrong ans",
+        "v1_issue_id": "phase5_flagship_mainline_v1_release_1_2026_041_to_1_2026_048_capability_answer_quality_c02",
+        "v1_issue_title": "Answer quality is inaccurate for wrong policy",
+        "v2_contamination_flags": [
+          "weak_focus_signal"
+        ],
+        "v2_decision": "weak_not_attached",
+        "v2_issue_evidence_tier": "weak_issue_evidence",
+        "v2_issue_family": "answers_are_wrong_or_misleading"
+      },
+      {
+        "primary_label": "capability_answer_quality",
+        "review_id": "f9c52cc5-1de3-4c87-8f2d-08f4cb75b2f5",
+        "review_text_excerpt": "Waste of time, leads you on wrong paths for the most basic questions. One search online and a forum answer from real people is much faster.",
+        "v1_issue_id": "phase5_flagship_mainline_v1_release_1_2026_041_to_1_2026_048_capability_answer_quality_c03",
+        "v1_issue_title": "Answer quality is inaccurate for answer properly",
+        "v2_contamination_flags": [
+          "weak_focus_signal"
+        ],
+        "v2_decision": "weak_not_attached",
+        "v2_issue_evidence_tier": "weak_issue_evidence",
+        "v2_issue_family": "answers_are_wrong_or_misleading"
+      },
+      {
+        "primary_label": "capability_answer_quality",
+        "review_id": "e149b376-332b-4fca-b035-02f3b51e6bad",
+        "review_text_excerpt": "this apps math answers are wrong and it don't make drawing and it has a limit impore this things then I give good rating tu this apps",
+        "v1_issue_id": "phase5_flagship_mainline_v1_release_1_2026_041_to_1_2026_048_capability_answer_quality_c04",
+        "v1_issue_title": "Answer quality is inaccurate for apps version",
+        "v2_contamination_flags": [
+          "cross_label_semantics_in_focus",
+          "multi_issue_ambiguity"
+        ],
+        "v2_decision": "weak_not_attached",
+        "v2_issue_evidence_tier": "weak_issue_evidence",
+        "v2_issue_family": "math_and_calculation_answers_are_wrong"
+      },
+      {
+        "primary_label": "capability_answer_quality",
+        "review_id": "c1d09f78-eb9e-48b0-b71b-0af2e356ffdc",
+        "review_text_excerpt": "It is one of the best apps to inform yourself about anything, the only problem I have is with uploading photos, from the beginning I had issues with it. I've tried everything my permissions are on but still nothing. I hope they fix this bug",
+        "v1_issue_id": "phase5_flagship_mainline_v1_release_1_2026_041_to_1_2026_048_capability_answer_quality_c04",
+        "v1_issue_title": "Answer quality is inaccurate for apps version",
+        "v2_contamination_flags": [
+          "cross_label_semantics_outside_focus",
+          "generic_negative_without_family"
+        ],
+        "v2_decision": "weak_not_attached",
+        "v2_issue_evidence_tier": "weak_issue_evidence",
+        "v2_issue_family": null
+      }
+    ],
+    "title_changes_from_mechanical_v1_titles": [
+      {
+        "overlap_review_ids": [
+          "16469632-4199-443e-acf0-33d681995a80",
+          "50882bac-d608-4bbf-9e92-683046f510e8",
+          "51a3b842-7ccb-48ee-a47e-ec730e840f42",
+          "67c98302-b5a3-4efe-bfc7-8d64cebeeacb",
+          "7964450b-b2e5-4a27-a66c-ca5c5274a039"
+        ],
+        "v1_issue_id": "phase5_flagship_mainline_v1_release_1_2026_041_to_1_2026_048_pricing_access_limits_c01",
+        "v1_issue_title": "Pricing or paywall access is unclear for videos limit",
+        "v2_issue_id": "phase5_flagship_mainline_v2_release_1_2026_041_to_1_2026_048_pricing_access_limits_free_image_limit_too_restrictive",
+        "v2_issue_title": "Free image generation limits are too restrictive"
+      },
+      {
+        "overlap_review_ids": [
+          "302d4c5d-6ba1-486b-a530-760b871c92da"
+        ],
+        "v1_issue_id": "phase5_flagship_mainline_v1_release_1_2026_041_to_1_2026_048_pricing_access_limits_c01",
+        "v1_issue_title": "Pricing or paywall access is unclear for videos limit",
+        "v2_issue_id": "phase5_flagship_mainline_v2_release_1_2026_041_to_1_2026_048_pricing_access_limits_paid_upgrade_blocks_media_access",
+        "v2_issue_title": "Media upload and image features are blocked behind a paid upgrade"
+      }
+    ]
+  },
+  "run_id": "phase5_flagship_mainline_v2_release_1_2026_041_to_1_2026_048",
+  "summary_metrics": {
+    "contamination_reduction": {
+      "definition": "retained rows that do not qualify as core_issue_evidence under the bounded v2 structural rules",
+      "rows_removed_from_issue_formation": 115,
+      "v1_contaminated_retained_rows": 115,
+      "v2_contaminated_retained_rows": 0
+    },
+    "fragmentation_reduction": {
+      "definition": "issue object count and micro-issue count with fewer than 3 retained rows",
+      "v1_issue_count": 13,
+      "v1_micro_issue_count": 0,
+      "v2_issue_count": 6,
+      "v2_micro_issue_count": 0
+    },
+    "issue_grouping_fidelity_change": {
+      "definition": "average issue-level dominant-family alignment for retained rows",
+      "delta": 0.5398,
+      "v1": 0.4602,
+      "v2": 1.0
+    },
+    "issue_object_purity_change": {
+      "definition": "share of retained rows classified as core_issue_evidence under the bounded v2 structural rules",
+      "delta": 0.7419,
+      "v1": 0.2581,
+      "v2": 1.0
+    },
+    "issue_title_semantic_fidelity_change": {
+      "definition": "share of issue titles not flagged as mechanically weak by the bounded title heuristic",
+      "delta": 0.3077,
+      "v1": 0.6923,
+      "v2": 1.0
+    }
+  },
+  "surface": "flagship_mainline_v2_comparison",
+  "v1_baseline_refs": {
+    "config_ref": "configs/phase5/flagship_mainline_config_v1.json",
+    "input_package_ref": "configs/phase5/flagship_mainline_input_package_v1.json",
+    "issue_objects_ref": "artifacts/phase5/flagship_mainline_v1_release_1_2026_041_to_1_2026_048/issue_objects.json",
+    "issue_population_index_ref": "artifacts/phase5/flagship_mainline_v1_release_1_2026_041_to_1_2026_048/issue_population_index.json",
+    "run_summary_ref": "artifacts/phase5/flagship_mainline_v1_release_1_2026_041_to_1_2026_048/run_summary.json",
+    "top_issues_ref": "artifacts/phase5/flagship_mainline_v1_release_1_2026_041_to_1_2026_048/top_issues.json"
+  },
+  "v1_top_issues_snapshot": {
+    "run_id": "phase5_flagship_mainline_v1_release_1_2026_041_to_1_2026_048",
+    "top_issue_titles": [
+      "Pricing or paywall access is unclear for videos limit",
+      "Pricing or paywall access is unclear for help upgrade",
+      "Answer quality is inaccurate for answer properly",
+      "Answer quality is inaccurate for apps version",
+      "Slow or unstable behavior when using working nokia"
+    ]
+  },
+  "version_window": {
+    "allowed_versions": [
+      "1.2026.041",
+      "1.2026.048"
+    ],
+    "include_null_version_buckets": [],
+    "window_label": "chatgpt_android_google_play_release_window_1.2026.041_to_1.2026.048",
+    "window_type": "explicit_version_list"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "contract_ref": "documents/contracts/phases/phase5_contract.md",
+  "decision_time": "2026-04-13T02:55:56Z",
+  "evidence_list": [
+    "artifacts/phase5/flagship_mainline_v2_release_1_2026_041_to_1_2026_048/preflight_result.json",
+    "artifacts/phase5/flagship_mainline_v2_release_1_2026_041_to_1_2026_048/issue_objects.json",
+    "artifacts/phase5/flagship_mainline_v2_release_1_2026_041_to_1_2026_048/issue_population_index.json",
+    "artifacts/phase5/flagship_mainline_v2_release_1_2026_041_to_1_2026_048/top_issues.json",
+    "artifacts/phase5/flagship_mainline_v2_release_1_2026_041_to_1_2026_048/v2_vs_v1_comparison.json"
+  ],
+  "limitation": [
+    "Some previously retained rows now downgrade or fall out of issue formation because the cleaner family-bounded structure refuses ambiguous or contaminated evidence."
+  ],
+  "primary_verdict": "accept with limitation",
+  "required_checks": [
+    {
+      "check": "bounded_v2_issue_formation_emits_evidence_tiers",
+      "details": "issue_population_index.json includes issue_evidence_tier, issue_focus_text, cluster_input_text, contamination_flags, and issue_family for every selected row.",
+      "outcome": "pass"
+    },
+    {
+      "check": "excluded_rows_do_not_participate_in_issue_formation",
+      "details": "Only core_issue_evidence rows seed issue objects; excluded_noise_or_praise rows remain outside issue formation.",
+      "outcome": "pass"
+    },
+    {
+      "check": "comparison_artifact_is_row_traceable",
+      "details": "v2_vs_v1_comparison.json contains row-level excluded or downgraded examples, reassignment examples, and mechanical title change examples.",
+      "outcome": "pass"
+    },
+    {
+      "check": "pricing_access_limits_contamination_reduction",
+      "details": "pricing_access_limits purity is evaluated against the frozen v1 retained rows under the same bounded v2 structural rules.",
+      "outcome": "pass"
+    },
+    {
+      "check": "issue_title_semantic_fidelity_improved",
+      "details": "Issue titles are compared with a bounded mechanical-title heuristic rather than narrative judgment.",
+      "outcome": "pass"
+    },
+    {
+      "check": "issue_grouping_fidelity_improved",
+      "details": "Grouping fidelity is measured as dominant-family alignment among retained rows.",
+      "outcome": "pass"
+    }
+  ],
+  "reviewer": "GitHub Copilot execution agent",
+  "waiver": null,
+  "warning": null,
+  "work_item_scope_id": "phase5_flagship_mainline_v2_release_1_2026_041_to_1_2026_048"
+}
